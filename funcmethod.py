@@ -5,10 +5,7 @@ def vol(rad):
     return (4/3.0) * math.pi * (rad**3)
 
 def ran_check(num, low, high):
-    if num >= low and num <= high:
-        return True
-    else:
-        return False
+    return num in range(low, high)
 
 def up_low(s):
     low = 0
